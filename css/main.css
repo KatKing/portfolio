@@ -72,10 +72,11 @@ p {
 }
 
 .katKing {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     padding: 0;
     margin-top: 0;
+
 }
 
 /* ==========================================================================
@@ -159,6 +160,35 @@ Buttons Styles
   text-decoration: none;
 }
 
+.gradient-button {
+  background: transparent linear-gradient(to top left, rgba(249,208,129,.2) 0%, rgba(227,2,62,.2) 40%, rgba(49,128,135,.2) 100%);
+  border: 5px solid transparent;
+  border-image: linear-gradient(to top left, rgba(249,208,129,1) 0%, rgba(227,2,62,1) 40%, rgba(49,128,135,1) 100%);
+  border-image-slice: 1;
+  transition: transform .25s;
+  padding: 15px 30px;
+  font-size: 14px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #333;
+
+}
+
+.gradient-button:hover {
+  color: #fff;
+  background: transparent linear-gradient(to bottom left, rgba(249,208,129,.25) 10%, rgba(227,2,62,.25) 30%, rgba(49,128,135,.25) 90%);
+  
+}
+
 /* ==========================================================================
 Layout 
 ========================================================================== */
@@ -200,9 +230,13 @@ Preloader Style
 Navigation Style
 ========================================================================== */
 .navbar-default {
-  background: rgba(13, 13, 13, 0.6);
+  background: transparent;
   margin-bottom: 0;
   border: none;
+  color: black;
+}
+.navbar-default a {
+  color: #000!important;
 }
 .navbar-default .navbar-header {
   width: 28%;
@@ -239,11 +273,12 @@ Navigation Style
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   background: transparent;
-  color: #a3a3a3;
+  color: #24242a;
 }
 
 .top-nav-collapse {
-  background: #24242a;
+ background: #fff;
+ 
 }
 .top-nav-collapse .navbar-brand {
   height: auto;
@@ -276,7 +311,7 @@ Sliders Style
 #owl-hero .item .caption {
   position: absolute;
   top: 50%;
-  margin-top: -104px;
+  margin-top: -130px;
   left: 0;
   right: 0;
   text-align: center;
@@ -357,7 +392,7 @@ Sliders Style
 Welcome Style
 ========================================================================== */
 #welcome {
-  padding: 60px 0;
+  padding: 30px 0;
   text-align: center;
 }
 #welcome h2 {
@@ -704,7 +739,7 @@ Testimonials Style
 Contact Us Style
 ========================================================================== */
 #contact {
-  background-image: url("../img/sliders/hero2.jpg");
+  background-image: url("../img/sliders/floral2.jpg");
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
